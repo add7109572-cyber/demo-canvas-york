@@ -1,20 +1,53 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Canvas Hair and Beauty — York</title><link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700;900&display=swap" rel="stylesheet">
-<style>body{margin:0;font-family:'Lora',system-ui,sans-serif;background:#f0fdfa;color:#222}
-nav{display:flex;justify-content:space-between;padding:16px 22px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)} nav a{color:#0f766e;text-decoration:none;font-weight:700;margin-left:14px}
-.hero{padding:40px 22px} .hero img{width:100%;max-height:420px;object-fit:cover;border-radius:20px}
-.hero.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .hero.split img{height:380px}
-.hero.dark{background:#111;color:#fff} .hero.dark img{opacity:.85} .hero.full{position:relative;padding:0} .hero.full img{max-height:70vh} .hero.full div{position:absolute;bottom:30px;left:24px;color:#fff;text-shadow:0 2px 12px #000}
-.hero.center{text-align:center} .hero.center img{max-width:720px;margin:20px auto;display:block}
-h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.05} .btn{display:inline-block;background:#0f766e;color:#fff;padding:13px 26px;border-radius:20px;text-decoration:none;font-weight:800}
-section{max-width:1080px;margin:auto;padding:36px 22px} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.svc{background:#fff;padding:20px;border-radius:20px;box-shadow:0 6px 18px rgba(0,0,0,.07);transition:.3s} .svc:hover{transform:translateY(-6px)} .svc a{color:#0f766e;font-weight:700;text-decoration:none}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px} .gallery img{width:100%;height:200px;object-fit:cover;border-radius:20px}
-.note{background:#fef3c7;padding:12px;border-radius:10px;text-align:center;margin-top:24px}
-@media(max-width:700px){.hero.split{grid-template-columns:1fr}}
-</style></head><body><nav><strong>Canvas Hair and Beauty</strong><span><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#book">Book</a></span></nav>
-<header class="hero center"><h1>Canvas Hair and Beauty</h1><p>York</p><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200&q=80" alt="Canvas Hair and Beauty"><a class="btn" href="#book">Book an appointment</a></header>
-<section id="services"><h2>Services at Canvas Hair and Beauty</h2><div class="grid"><div class="svc"><h3>Blow-Dry</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>Balayage</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>Guinot Facials</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>Nail Treatments</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div></div></section>
-<section id="gallery"><h2>Gallery</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=1200&q=80" alt="Canvas Hair and Beauty" loading="lazy"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=1200&q=80" alt="Canvas Hair and Beauty" loading="lazy"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80" alt="Canvas Hair and Beauty" loading="lazy"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1200&q=80" alt="Canvas Hair and Beauty" loading="lazy"></div></section>
-<section id="book"><div style="background:#0f766e;color:#fff;padding:36px;border-radius:20px;text-align:center"><h2>Visit Canvas Hair and Beauty in York</h2><p>Designed uniquely for this salon.</p><a class="btn" style="background:#fff;color:#0f766e" href="#">Book now →</a></div><div class="note">Demo concept only — not the salon's official website. Photos are illustrative stock photos.</div></section>
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Canvas Hair and Beauty — York | Redesign Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Lora',serif;background:#f0fdfa;color:#222}
+.banner{background:#111;color:#fff;text-align:center;padding:12px 16px;font-weight:700;font-size:15px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+nav b{font-family:'Lora',serif;font-size:22px;color:#0f766e}
+nav a{color:#0f766e;text-decoration:none;font-weight:700;margin-left:14px}
+.hero{padding:38px 22px;max-width:1080px;margin:0 auto}
+.hero.split img{width:100%;border-radius:20px;object-fit:cover;max-height:420px}
+.hero h1{font-family:'Lora',serif;font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;color:#0f766e}
+.hero p.lead{font-size:19px;line-height:1.6}
+.btn{display:inline-block;background:#0f766e;color:#fff;padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:700;margin:8px 8px 8px 0}
+.btn.ghost{background:#fff;color:#0f766e;border:2px solid #0f766e}
+section{max-width:1080px;margin:0 auto;padding:26px 22px}
+h2{font-family:'Lora',serif;color:#0f766e;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 18px rgba(0,0,0,.07);transition:transform .25s}
+.card:hover{transform:translateY(-5px)}
+.prices{background:#fff;border-radius:16px;padding:8px 22px}
+.price{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gallery img{width:100%;height:190px;object-fit:cover;border-radius:14px}
+.note{background:#fff8e1;border:1px solid #f0d98c;border-radius:12px;padding:16px}
+footer{background:#111;color:#ddd;text-align:center;padding:26px 18px;line-height:1.7}
+footer a{color:#fff}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero,section{animation:fade .7s ease both}
+</style></head><body>
+<div class="banner">Demo concept only — a redesign preview of Canvas Hair and Beauty’s website, not their full official site</div>
+<nav><b>Canvas</b><span><a href="#services">Services</a><a href="#visit">Visit</a></span></nav>
+<div class="hero split">
+<h1>You bring the canvas. We&#x27;ll add the magic.</h1>
+<p class="lead">Hair and beauty in the heart of York city centre, with Guinot facials, massages, nail treatments and pamper packages — plus a free consultation.</p>
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200&q=80" alt="Salon interior — illustrative stock photo">
+<p><a class="btn" href="https://www.canvasyork.com/">Visit the salon&rsquo;s real website &rarr;</a>
+<a class="btn ghost" href="tel:+441904656970">Call 01904 656970</a></p>
+<p class="note">This demo does not take bookings. It previews a redesign &mdash; booking stays with the salon&rsquo;s real website and phone, exactly as today.</p>
+</div>
+<section id="services"><h2>What we do</h2><div class="grid"><div class="card"><h3>Hair</h3><p>Blow-dry and balayage, creating your dream look.</p></div><div class="card"><h3>Beauty</h3><p>Guinot facials, massages and nail treatments.</p></div><div class="card"><h3>Pamper packages</h3><p>Treat yourself or someone special — gift vouchers available.</p></div><div class="card"><h3>Student discount</h3><p>Student discount available with ID when booking direct to Canvas.</p></div></div></section>
+<section><h2>Pamper packages — as listed on the salon&#x27;s own site</h2><div class="prices"><div class="price"><span>Blow Dry + Express Facial</span><b>£65</b></div><div class="price"><span>Blow Dry + Gel Polish</span><b>£60</b></div><div class="price"><span>Blow Dry and Style + 1 Hour Massage</span><b>£95</b></div><div class="price"><span>Cut and Style + Lash and Brow Tint + Nail Shape and Polish</span><b>£85</b></div></div></section>
+<section><h2>What this redesign fixes</h2><ul><li>The salon&#x27;s best content — its priced pamper packages — sat below the fold; here they lead.</li><li>Each service heading becomes a card with a clear action, instead of a heading with no price or booking link.</li><li>Hours, phone and email sit in one visit section, and the 24-hour cancellation notice is stated plainly.</li></ul></section>
+<section><h2>Gallery</h2><div class="gallery">
+<img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=1200&q=80" alt="Hair styling — illustrative stock photo">
+<img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80" alt="Salon treatment — illustrative stock photo">
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80" alt="Salon detail — illustrative stock photo">
+</div><p>Photos are illustrative stock photos, not photos of this salon.</p></section>
+<section id="visit"><h2>Visit us</h2><p>8a Walmgate, York YO1 9TJ</p><p>Phone: 01904 656970 · Email: canvassalonyork@gmail.com</p><p>Hours: Tue, Wed &amp; Fri 9am–6pm, Thu 10am–7pm (late night), Sat 9am–4pm, Sun &amp; Mon closed; evening appointments on request</p><p>Free consultation: pop by the salon. Cancellation: at least 24 hours&#x27; notice.</p></section>
+<footer><div class="banner">Demo concept only — a redesign preview of Canvas Hair and Beauty’s website, not their full official site</div><br>Demo concept only. Photos are illustrative stock photos.
+<br>Real website: <a href="https://www.canvasyork.com/">https://www.canvasyork.com/</a></footer>
 </body></html>
